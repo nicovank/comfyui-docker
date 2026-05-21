@@ -12,11 +12,6 @@ Putting instructions down for Qwen-Image. Instructions for other models can be f
 ### [Qwen-Image](https://github.com/QwenLM/Qwen-Image)
 
 ```bash
-mkdir models
-mkdir models/diffusion_models
-mkdir models/text_encoders
-mkdir models/vae
-
 wget -P models/diffusion_models https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/diffusion_models/qwen_image_fp8_e4m3fn.safetensors
 wget -P models/text_encoders https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors
 wget -P models/vae https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/vae/qwen_image_vae.safetensors
