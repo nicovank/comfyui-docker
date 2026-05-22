@@ -18,6 +18,18 @@ wget -P models/vae https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/m
 wget -P models/diffusion_models https://huggingface.co/Comfy-Org/Qwen-Image-Edit_ComfyUI/resolve/main/split_files/diffusion_models/qwen_image_edit_2509_fp8_e4m3fn.safetensors
 ```
 
+### [FLUX 2](https://github.com/black-forest-labs/flux2)
+
+```bash
+wget -P models/text_encoders https://huggingface.co/Comfy-Org/flux2-dev/resolve/main/split_files/text_encoders/mistral_3_small_flux2_fp8.safetensors
+wget -P models/vae https://huggingface.co/Comfy-Org/flux2-dev/resolve/main/split_files/vae/flux2-vae.safetensors
+
+# Generate a read token here: https://huggingface.co/settings/tokens.
+export HF_TOKEN=<...>
+pip install huggingface-hub
+python -c 'from huggingface_hub import hf_hub_download; hf_hub_download("black-forest-labs/FLUX.2-dev", "flux2-dev.safetensors", local_dir="./models/diffusion_models")'
+```
+
 ## Running
 
 ```bash
